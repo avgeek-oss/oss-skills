@@ -2,6 +2,8 @@
 
 Creating this repository does not automatically install its skills into any agent or application repository.
 
+The `oss-design-system` entry is currently a draft awaiting handwritten instructions. Complete and review it before using the installation steps below.
+
 ## Local Codex authoring
 
 Clone the repository into a location you maintain:
@@ -9,12 +11,12 @@ Clone the repository into a location you maintain:
 ```sh
 gh repo clone avgeek-oss/oss-skills ~/Repositories/oss-skills
 mkdir -p ~/.agents/skills
-ln -s ~/Repositories/oss-skills/skills/oss-shared-ui ~/.agents/skills/oss-shared-ui
+ln -s ~/Repositories/oss-skills/skills/oss-design-system ~/.agents/skills/oss-design-system
 ```
 
 If the destination already exists, inspect it before changing it; the command above deliberately does not overwrite another skill. If you already have the source repository cloned, use its existing path.
 
-Codex supports symlinked skill folders and discovers user skills from `~/.agents/skills`. Mention `$oss-shared-ui` to invoke it explicitly. Discovery and selection are separate: a task may select a matching description implicitly, while an explicit invocation makes the intended workflow clear. Restart Codex if the installed skill does not appear. These details follow the [official skills documentation](https://learn.chatgpt.com/docs/build-skills).
+Codex supports symlinked skill folders and discovers user skills from `~/.agents/skills`. Mention `$oss-design-system` to invoke it explicitly. Discovery and selection are separate: a task may select a matching description implicitly, while an explicit invocation makes the intended workflow clear. Restart Codex if the installed skill does not appear. These details follow the [official skills documentation](https://learn.chatgpt.com/docs/build-skills).
 
 A symlink tracks the current source checkout. Pull updates deliberately, and avoid editing that checkout to test an unreviewed workflow during unrelated work.
 

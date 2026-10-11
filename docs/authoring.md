@@ -1,5 +1,7 @@
 # Authoring and maintaining a skill
 
+The repository owner writes skill instructions by hand. The `oss-design-system` draft is the only skill entry for now; its workflow is intentionally left unwritten.
+
 ## Decide where the instruction belongs
 
 Put a rule in the target repository's `AGENTS.md` when it must apply to every relevant change: source ownership, public API compatibility, or required checks. Put a reusable task procedure in a skill. Put a deterministic requirement in tooling and CI whenever possible: formatting, unused code, import boundaries, types, or a complexity threshold.
@@ -28,7 +30,7 @@ Include:
 - A failure case where the agent must retain an error or report a missing prerequisite.
 - A case that previously caused drift, judged by the resulting diff or actions rather than the agent saying it complied.
 
-For `oss-shared-ui`, use its [evaluation cases](../skills/oss-shared-ui/references/evaluation.md). Passing the metadata validator is not evidence that these cases passed.
+Passing the metadata validator is not evidence that these cases passed. A draft entry should remain uninstalled until its instructions are written and reviewed.
 
 ## Roll out changes
 
@@ -36,4 +38,4 @@ Review skill changes like code. A consuming repository should record the exact c
 
 Update the skill after a concrete failure reveals a missing decision. Prefer fixing the decision procedure over adding a broad prohibition. If a requirement can be measured reliably, enforce it in the target repository's CI as well.
 
-Repository-local `AGENTS.md` can require a skill for a specific trigger, for example: use `$oss-shared-ui` when changing common account settings UI. Only add that trigger after installing the skill for that repository.
+Repository-local `AGENTS.md` can require a skill for a specific trigger, for example: use `$oss-design-system` when working on the shared design system. Only add that trigger after completing and installing the skill for that repository.

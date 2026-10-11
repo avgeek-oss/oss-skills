@@ -1,6 +1,6 @@
 # OSS Skills
 
-Reusable coding-agent workflows maintained by Avgeek. This repository is the source of truth for skills shared across Towbar, Mill, Rootset, Vitalog, and future applications.
+Handwritten coding-agent skills maintained by Avgeek. This public repository is the home for skills shared across Towbar, Mill, Rootset, Vitalog, and future applications. The repository owner writes the skill instructions by hand.
 
 Skills guide how an agent approaches a task. They do not replace repository instructions, permission checks, code review, or CI.
 
@@ -14,14 +14,13 @@ Skills guide how an agent approaches a task. They do not replace repository inst
 | [Authoring guide](docs/authoring.md) | Add, evaluate, and update a skill |
 | [Installation guide](docs/installation.md) | Install locally or pin a version in a consuming repository |
 
-## Available skills
+## Skill catalog
 
-| Skill | Use it for |
+| Skill | Status |
 | --- | --- |
-| [oss-change-verification](skills/oss-change-verification/SKILL.md) | Checking correctness, unnecessary complexity, and the repository's required verification gates |
-| [oss-shared-ui](skills/oss-shared-ui/SKILL.md) | Changing common authentication, account settings, team settings, and table UI without creating app-specific copies |
+| [oss-design-system](skills/oss-design-system/SKILL.md) | Draft entry awaiting handwritten instructions |
 
-The starter skills capture shared UI ownership and a focused code-verification workflow. Other skills can be added as concrete workflows emerge—for example, API compatibility review or release verification. Keep lint settings and numeric complexity limits in the repositories that own the code, rather than duplicating them in prose here.
+Only `oss-design-system` is included for now. Its file contains metadata and a title, with the workflow left for the owner to write. Finish and review the instructions before installing it. Keep lint settings and numeric complexity limits in the repositories that own the code, rather than duplicating them in prose here.
 
 ## Validate locally
 
