@@ -1,0 +1,4 @@
+interface:
+  display_name: "Shared OSS UI"
+  short_description: "Keep common app UI in shared patterns"
+  default_prompt: "Use $oss-shared-ui to implement this common UI change and verify desktop and mobile behavior."

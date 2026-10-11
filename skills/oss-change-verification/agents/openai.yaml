@@ -1,0 +1,4 @@
+interface:
+  display_name: "OSS Change Verification"
+  short_description: "Check correctness, complexity, and required gates"
+  default_prompt: "Use $oss-change-verification to review this change and verify that its required checks pass."
